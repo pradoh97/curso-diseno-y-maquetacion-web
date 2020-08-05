@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+:root{
+  font-size: calc(0.8em + 0.3vmax);
+}
+h1, h2, h3, h4{
+  margin: 0;
+}
+body{
+  font-family: "Merriweather", serif;
+}
+a{
+  color: inherit;
+}
+a:hover{
+  color: rgb(100, 100, 100);
+}
+.encabezado{
+  line-height: 2em;
+}
+.encabezado .titular{
+  font-size: 2em;
+  font-weight: 900;
+  margin: 0.5em 0 0.25em 0;
+}
+.encabezado .subtitulo{
+  font-weight: 700;
+  font-size: 1.5em;
+}
+.noticia{
+  text-align: justify;
+  margin: 1em 0 5em;
+}
+.noticia p{
+  line-height: 2em;
+}
+.noticia figcaption{
+  margin-top: 1em;
+  font-size: 0.9em;
+}
+.noticia figure{
+  max-width: 400px;
+  margin: auto;
+}
+.noticia figure img{
+  width: 100%;
+  object-fit: contain;
+}
+.noticia video{
+  width: 100%;
+  height: auto;
+}
+.noticia .video{
+  max-width: 1080px;
+  margin: auto;
+}
+
+.categoria{
+  font-weight: 700;
+  padding-bottom: 0.5em;
+  display: inline-block;
+}
+.separador{
+  border-bottom: 2px solid rgb(76,181,99);
+  margin-bottom: 1em;
+}
+.enfasis{
+  color: rgb(76, 181, 99);
+}
+a.enfasis{
+  text-decoration: none;
+}
+a.enfasis:hover{
+  color: rgb(111, 195, 129);
+  text-decoration: underline;
+}
+
+.noticia cite{
+  color: rgb(80,80,80);
+  font-size: 1.2em;
+  margin: 0 5em;
+  padding: 0 0.5em;
+  display: block;
+  text-align: center;
+  border-bottom: 2px solid rgb(80, 80, 80);
+  border-top: 2px solid rgb(80, 80, 80);
+}
+.noticia cite::before{
+  content: "\"";
+}
+.noticia cite::after{
+  content: "\"";
+}
+abbr{
+  font-weight: 700;
+  cursor: help;
+}
+
+.recomendaciones{
+  margin-bottom: 1em;
+}
+.recomendaciones .separador a{
+  padding: 0.5em 0;
+  display: inline-block;
+}
+.tarjeta{
+  max-width: 400px;
+  font-size: 0.8em;
+  display: block;
+  box-shadow: 0 0 0.2em rgb(0, 0, 0);
+  padding: 1em;
+}
+.tarjeta:hover{
+  box-shadow: 0 0 0.5em rgb(0, 0, 0);
+}
+.tarjeta h2{
+  margin-top: 1em;
+}
+.tarjeta img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}

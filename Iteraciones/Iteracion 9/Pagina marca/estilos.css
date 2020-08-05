@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+  font-size: calc(0.8em + 0.2vmax);
+}
+body{
+  font-family: "Roboto";
+}
+button, input, textarea{
+  font-family: inherit;
+}
+a{
+  text-decoration: none;
+}
+a, button{
+  color: inherit;
+  cursor: pointer;
+}
+
+h1{
+  text-align: center;
+}
+header{
+  font-size: 1.2em;
+}
+.menu-principal .logo{
+  font-size: 3em;
+  font-weight: 100;
+  padding: 0.2em 0.4em;
+}
+.logo:hover, .menu-principal a:hover{
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+}
+.menu-principal a{
+  padding: 1em 1.5em;
+}
+main{
+  width: 85%;
+  margin: 0 auto;
+}
+main > *{
+  margin: 2em 0;
+}
+section{
+  font-size: 1.5em;
+}
+section h1{
+  padding: 0.5em 0;
+  border-top: 2px solid rgb(0, 0, 0);
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+.tarjeta{
+  box-shadow: 0 0 0.1em rgb(0, 0, 0);
+  max-width: 300px;
+  border-radius: 5px;
+}
+.tarjeta img{
+  width: 100%;
+  object-fit: cover;
+}
+.tarjeta .nombre-producto{
+  font-weight: 500;
+}
+.tarjeta .precio-producto{
+  font-weight: 900;
+}
+button.cta{
+  margin: 0 auto;
+  border-radius: 5px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-size: 0.8em;
+  border: none;
+  padding: 0.75em 1.5em;
+}
+button.cta:hover{
+  background-color: rgb(70, 70, 70);
+  box-shadow: 0 0 0.2em rgb(0, 0, 0);
+}
+button.cta:active{
+  background-color: rgb(100,100,100);
+  box-shadow: 0 0 0.5em rgb(0, 0, 0);
+}
+form{
+  text-align: center;
+  margin: auto;
+  border: 2px solid rgb(0, 0, 0);
+  padding: 2em 1em 1em;
+  border-radius: 5px;
+}
+form > input + label {
+  margin-top: 1em;
+}
+input{
+  padding: 0.75em 1em;
+}
+textarea{
+  margin-bottom: 2em;
+  padding: 1em;
+}
+input, textarea{
+  font-size: 0.7em;
+  width: 80%;
+  max-width: 100%;
+}
+label, button.cta{
+  display: block;
+}
+footer{
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 1.2em;
+  padding: 1em;
+}
+footer a{
+  display: block;
+}
+footer a:hover{
+  text-decoration: underline;
+}
+.grupo-enlaces{
+  display: inline-block;
+  margin: 1em;
+}
+.grupo-enlaces > a + a{
+  margin-top: 0.5em;
+}

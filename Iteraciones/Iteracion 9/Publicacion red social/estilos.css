@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+.publicacion{
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 0.5em;
+}
+.publicacion a{
+  text-decoration: none;
+  color: inherit;
+}
+.publicacion a:hover{
+  text-decoration: underline;
+}
+.publicacion p{
+  margin: 0;
+}
+.publicacion{
+  background-color: rgb(0, 0, 0);
+  max-width: 600px;
+  border: 1px solid rgb(120,120,120);
+  cursor: pointer;
+}
+.publicacion:hover{
+  background-color: rgb(50, 50, 50);
+}
+.publicacion img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.publicacion .contenido{
+  color: rgb(255, 255, 255);
+}
+.publicacion.metadatos-tweet > *, .publicacion.perfil > * {
+  margin: 0 0.1em;
+  display: inline-block;
+}
+.publicacion .metadatos-tweet .nombre, .publicacion .metadatos-tweet .perfil{
+  font-weight: 600;
+  margin-left: 0;
+}
+.publicacion.perfil:hover > *{
+  text-decoration: underline;
+}
+.publicacion .perfil:hover .usuario, .publicacion.usuario:hover a{
+  text-decoration: none;
+}
+.publicacion button, .publicacion .hora, .publicacion .usuario{
+  color: rgb(180, 180,180);
+  font-weight: 400;
+}
+.publicacion .mensaje{
+  color: rgb(220, 220, 220);
+  margin: 0.2em 0 1em;
+}
+.publicacion button{
+  background: none;
+  border: none;
+  margin-bottom: 4px;
+  cursor: pointer;
+  padding: 0;
+}
+.publicacion > :first-child, .publicacion .contenido{
+  display: inline-block;
+}
+
+.publicacion.comentar:hover, .publicacion.compartir:hover{
+  color: rgba(29, 161, 242, 1);
+}
+.publicacion.retwittear:hover{
+  color: rgb(23, 191, 99);
+}
+.publicacion.gustar:hover{
+  color: rgba(224, 36, 94, 1);
+}

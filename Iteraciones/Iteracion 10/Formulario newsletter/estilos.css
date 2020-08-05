@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.modal h1, .modal h2, .modal p{
+  margin: 0;
+}
+.modal{
+  font-size: calc(0.8rem + 0.4vmax);
+  background-image: url("res/img/comida.jpg");
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  box-shadow: 0 0 0.4em rgb(0, 0, 0);
+  max-width: 500px;
+  overflow: hidden;
+  --color-enfasis: rgb(59, 153, 207);
+  --transicion-corta: 0.3s;
+}
+.modal, .modal button, .modal input{
+    border-radius: 5px;
+}
+.modal .sombra{
+  padding: 1.5em 1em;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal h1{
+  color:rgb(255,219,88);
+  font-weight: 900;
+  font-size: 2em;
+}
+.modal p{
+  font-size: 1.5em;
+  font-weight: 400;
+}
+.modal .cuerpo * + *, .modal form > * + *{
+  margin-top: 1em;
+}
+.modal .cuerpo{
+  padding: 1em 2em;
+}
+.modal .cuerpo, .modal form{
+  color: rgb(255, 255, 255);
+}
+.modal label, .modal button{
+  color: inherit;
+}
+.modal label{
+  display: block;
+  font-size: 1.2em;
+  font-weight: 600;
+  padding: 0.2em;
+}
+.modal button, .modal input{
+  font-family: inherit;
+  padding: 0.75em 1em;
+}
+.modal button{
+  transition-property: box-shadow;
+  transition-duration: var(--transicion-corta);
+  cursor: pointer;
+}
+.modal input{
+  border-color: transparent;
+  transition-property: box-shadow, border;
+  transition-duration: var(--transicion-corta);
+}
+.modal input:hover{
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
+}
+.modal input:focus{
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.8);
+  border-color: var(--color-enfasis);
+}
+.modal button:hover{
+  box-shadow: 0 0 5em inset rgba(255, 255, 255, 0.3);
+}
+.modal button:active{
+  box-shadow: 0 0 5em inset rgba(0, 0, 0, 0.3);
+}
+.modal button.suscribir{
+  background-color: var(--color-enfasis);
+  border: 2px solid transparent;
+}
+.modal button.cancelar{
+  background-color: transparent;
+  border: 2px solid rgb(255, 255, 255);
+}

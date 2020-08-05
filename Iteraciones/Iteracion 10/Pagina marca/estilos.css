@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+  font-size: calc(0.8em + 0.2vmax);
+}
+body{
+  font-family: "Roboto";
+  --color-normal: rgb(255, 255, 255);
+  --color-contraste: rgb(0, 0, 0);
+  --color-contraste-transparente: rgba(0, 0, 0, 0.5);
+  --color-contraste-claro: rgb(70, 70, 70);
+  --radio-bordes: 5px;
+  --transicion-corta: 0.2s;
+}
+button, input, textarea{
+  font-family: inherit;
+}
+a{
+  text-decoration: none;
+}
+a, button{
+  color: inherit;
+  cursor: pointer;
+}
+
+h1{
+  text-align: center;
+}
+header{
+  font-size: 1.2em;
+}
+.menu-principal .logo{
+  font-size: 3em;
+  font-weight: 100;
+  padding: 0.2em 0.4em;
+}
+.logo, .menu-principal a{
+  transition-property: background-color, color;
+  transition-duration: var(--transicion-corta);
+}
+.logo:hover, .menu-principal a:hover{
+  color: var(--color-normal);
+  background-color: var(--color-contraste);
+}
+.menu-principal a{
+  padding: 1em 1.5em;
+}
+main{
+  width: 85%;
+  margin: 0 auto;
+}
+main > *{
+  margin: 2em 0;
+}
+section{
+  font-size: 1.5em;
+}
+section h1{
+  padding: 0.5em 0;
+  border-top: 2px solid var(--color-contraste);
+  border-bottom: 2px solid var(--color-contraste);
+}
+.tarjeta{
+  box-shadow: 0 0 0.1em var(--color-contraste);
+  width: 300px;
+  background: var(--color-normal);
+  border-radius: var(--radio-bordes);
+  padding-bottom: 1em;
+  margin: 1em;
+  transition-property: transform;
+  transition-duration: var(--transicion-corta);
+  overflow: hidden;
+}
+.tarjeta:hover{
+  transform:scale(1.2);
+}
+.tarjeta img{
+  width: 100%;
+}
+.tarjeta .nombre-producto{
+  font-weight: 500;
+}
+.tarjeta .precio-producto{
+  font-weight: 900;
+}
+button.cta{
+  margin: 0 auto;
+  border-radius: var(--radio-bordes);
+  background-color: var(--color-contraste);
+  color: var(--color-normal);
+  font-size: 0.8em;
+  border: none;
+  transition-property: box-shadow, background-color;
+  transition-duration: var(--transicion-corta);
+  padding: 0.75em 1.5em;
+}
+button.cta:hover{
+  background-color: var(--color-contraste-claro);
+  box-shadow: 0 0 0.4em var(--color-contraste-transparente);
+}
+button.cta:active{
+  background-color: var(--color-contraste-transparente);
+  box-shadow: 0 0 0.8em var(--color-contraste-transparente);
+}
+form{
+  text-align: center;
+  margin: auto;
+  border: 2px solid var(--color-contraste);
+  padding: 2em 1em 1em;
+  border-radius: var(--radio-bordes);
+}
+form > input + label {
+  margin-top: 2em;
+}
+input{
+  border: none;
+  border-bottom: 1px solid rgb(200, 200, 200);
+  transition-property: box-shadow;
+  transition-duration: var(--transicion-corta);
+}
+input:focus{
+  box-shadow: 0 0 0.1em rgba(0, 0, 0, 0.3)
+}
+input{
+  padding: 0.75em 1em;
+}
+textarea{
+  margin-bottom: 2em;
+  padding: 1em;
+}
+input, textarea{
+  font-size: 0.7em;
+  width: 80%;
+  max-width: 100%;
+}
+label, button.cta{
+  display: block;
+}
+footer{
+  background-color: var(--color-contraste);
+  color: var(--color-normal);
+  text-align: center;
+  font-size: 1.2em;
+  padding: 1em;
+}
+footer a{
+  display: block;
+}
+footer a:hover{
+  text-decoration: underline;
+}
+.grupo-enlaces{
+  display: inline-block;
+  margin: 1em;
+}
+.grupo-enlaces > a + a{
+  margin-top: 0.5em;
+}
