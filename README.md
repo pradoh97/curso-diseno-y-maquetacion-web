@@ -1,2 +1,2 @@
 # curso-diseno-y-maquetacion-web
-Repositorio con todos los recursos usados para el curso
+Repositorio del curso de diseño y maquetación web. Todos los proyectos terminados y sus pasos intermedios.
