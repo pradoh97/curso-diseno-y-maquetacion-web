@@ -1,0 +1,37 @@
+body{
+  --color-enfasis: rgb(52, 208, 20);
+}
+p.enfasis{
+  color: var(--color-enfasis);
+}
+button.enfasis{
+  border: 2px solid var(--color-enfasis);
+  background: none;
+}
+.opacidad{
+  background-color: var(--color-enfasis);
+}
+.opacidad > :first-child{
+  opacity: 1;
+}
+.opacidad p{
+  opacity: 0.3;
+}
+img{
+  width: 50%;
+}
+.opacidad img{
+  opacity: 0.5;
+}
+
+.transformacion img{
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 1s;
+}
+.transformacion img:hover{
+  transform: scale(1.5);
+}
+.transformacion img:active{
+  transform: scale(1.5) rotate(30deg);
+}

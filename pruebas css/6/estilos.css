@@ -1,0 +1,32 @@
+@media (max-width: 480px){
+  .navegacion{
+    flex-flow: column;
+  }
+}
+@media (max-width:480px), (max-width: 728px){
+  .navegacion .logo{
+    display: none;
+  }
+}
+@media (max-width: 728px){
+  .navegacion{
+    justify-content: space-around;
+  }
+}
+@media (min-width: 728px){
+  .navegacion .logo{
+    display: inline;
+    flex-grow: 1;
+  }
+}
+.navegacion{
+  display: flex;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  padding: 1em 0;
+}
+.navegacion a{
+  color: inherit;
+  padding: 1em;
+  text-decoration: none;
+}

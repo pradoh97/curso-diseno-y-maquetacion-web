@@ -1,0 +1,25 @@
+div{
+  max-width: 1000px;
+  background-color: black;
+}
+.chico{
+  width: 200px;
+  height: 200px;
+}
+.rectangulo{
+  width: 400px;
+  height: 200px;
+}
+.rectangulo-2{
+  height: 400px;
+  width: 200px;
+}
+.grande{
+  width: 100%;
+}
+
+img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}

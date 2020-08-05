@@ -1,0 +1,56 @@
+body{
+  height: 200vh;
+}
+p{
+  margin: 0;
+  padding: 1em;
+}
+
+.fondo{
+  position: relative;
+  height: 500px;
+  background-color: rgb(53, 198, 92);
+  z-index: 1;
+}
+.fondo p{
+  background-color: black;
+  color: white;
+  padding: 1em;
+  top: 0;
+  position: sticky;
+  z-index: 1000;
+}
+
+.frente{
+  background-color: rgb(63, 19, 113);
+  color: white;
+  padding: 1em;
+  z-index: 2;
+  position: relative;
+  top: 30px;
+}
+p.uno{
+  background-color: rgb(94, 15, 224);
+  position: absolute;
+  top: 0;
+}
+p.dos{
+  background-color: rgb(249, 236, 55);
+}
+
+.fijo{
+  background-color: rgb(73, 176, 161);
+  position: fixed;
+  top: 50%;
+  left: 10%;
+  right: 10%;
+  z-index: 3;
+  transform: translateY(-50%);
+}
+
+.estatico p{
+  background-color: rgb(1, 166, 179);
+}
+.estatico{
+  position: static;
+}

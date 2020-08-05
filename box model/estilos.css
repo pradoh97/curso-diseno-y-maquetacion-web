@@ -1,0 +1,47 @@
+/* El contenido dicta el tamaño del contenedor y
+no puede ser alterado desde CSS. */
+body > div{
+  margin: 1em 0;
+}
+.inline-container{
+  border-top: 5px solid rgb(74, 176, 189);
+  border-bottom: 5px solid rgb(252, 34, 142);
+  border-right: 5px dashed rgb(63, 235, 173);
+  border-left: 5px dashed rgb(63, 235, 173);
+}
+.inline{
+  display: inline;
+  width: 500px;
+  height: 500px;
+}
+
+/* El ancho y el alto pueden ser fijados pero si no lo hacemos, el contenido va a dictar ambos tamaños.*/
+.inline-block{
+  border: 5px dashed rgb(21, 207, 62);
+}
+.inline-block p{
+  display: inline-block;
+  width: 400px;
+}
+
+/* El ancho y el alto pueden ser fijados. Si no lo hacemos, el ancho va a ser el disponible en su contenedor y el alto el que dicte el contenido.*/
+.block{
+  border: 5px dashed rgb(207, 21, 21);
+  display: block;
+  width: 200px;
+  height: 400px;
+}
+
+.block2{
+  width: 500px;
+  height: 50px;
+}
+.rojo{
+  background-color: red;
+  height: inherit;
+  width: 50%;
+}
+.azul{
+  background-color: blue;
+  height: inherit;
+}

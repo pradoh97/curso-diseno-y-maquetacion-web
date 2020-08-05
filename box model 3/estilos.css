@@ -1,0 +1,19 @@
+button.lda{
+  background: rgb(224, 228, 143);
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(0, 0, 0);
+  padding: 0.5em 1.5em;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+div{
+  width: 100vw;
+  max-width: 1000px;
+  min-width: 300px;
+  max-height: 100vh;
+}
+
+img{
+  width: 100%;
+}

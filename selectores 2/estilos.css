@@ -1,0 +1,15 @@
+button.lda{
+  background: rgb(53, 114, 232);
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 0.5em 1.5em;
+  display: block;
+}
+
+body > * + *{
+  margin-top: 1em;
+}
+
+body > div{
+  margin-top: 0;
+}

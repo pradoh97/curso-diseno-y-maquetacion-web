@@ -1,0 +1,27 @@
+#contraste{
+  color: rgb(59, 255, 0);
+}
+.azul{
+  background-color: rgb(57, 93, 201)!important;
+  width: 20%!important;
+}
+.rojo{
+  background-color: rgb(235, 16, 16);
+}
+.corto{
+  width: 20%;
+}
+.ancho{
+  width: 50%;
+}
+#contraste{
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+}
+div{
+  background-color: rgb(202, 230, 18);
+}
+/*
+!important, atributo style, selector de id, selector de class, selectores de elemento.
+
+*/

@@ -1,0 +1,63 @@
+.flex{
+  display: flex;
+  margin-bottom: 1em;
+}
+.flex.segundo{
+  align-items: stretch;
+}
+.flex.segundo .amarillo{
+  padding: 0;
+  flex-grow: 5;
+}
+.flex.segundo .celeste{
+  flex-grow: 1;
+}
+
+.flex.tercero{
+  justify-content: center;
+  flex-flow: row wrap;
+}
+.flex.tercero .rosa{
+  flex-shrink: 10;
+  flex-grow: 2;
+}
+.flex.tercero .amarillo{
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 300px;
+}
+.flex.tercero .celeste{
+  flex-grow: 1;
+  flex-shrink: 1;
+
+  /* Alinear item de un contenedor flex haciendolo flexible también aunque en el caso del texto se logra facilemnte con text align*/
+  display: flex;
+  justify-content: center;
+}
+
+/* Como actúa el valor column y el posicionamiento en este caso.*/
+.flex.cuarto{
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 300px;
+}
+
+/* Como actúa el valor wrap en columnas*/
+.flex.quinto{
+  flex-flow: column wrap;
+  justify-content: space-between;
+  height: 200px;
+}
+div > div{
+  padding: 2em;
+}
+.rosa{
+  background-color: rgb(209, 150, 255);
+}
+.celeste{
+  background-color: rgb(80, 192, 255);
+}
+.amarillo{
+  background-color: rgb(252, 255, 103);
+}

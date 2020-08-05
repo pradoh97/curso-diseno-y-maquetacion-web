@@ -1,0 +1,31 @@
+body{
+
+}
+.proyectos {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-auto-rows: 1fr;
+	grid-gap: 1em;
+	grid-auto-flow: dense;
+	margin: auto;
+}
+
+.proyectos > figure {
+	margin: 0;
+	display: flex;
+	flex-flow: column;
+}
+
+.proyectos img {
+	flex-grow: 1;
+	max-width: 100%;
+	object-fit: cover;
+	transition-property: transform, box-shadow;
+	transition-duration: 0.4s;
+}
+
+.proyectos img:hover {
+	transform: scale(1.1);
+	box-shadow: 0 0 2em rgba(0, 0, 0, 0.5);
+	z-index: 1;
+}

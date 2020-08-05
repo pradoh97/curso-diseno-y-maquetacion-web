@@ -1,0 +1,12 @@
+strong{
+  font-size: 28px;
+}
+.strong-normal{
+  font-size: 50px;
+  text-decoration: underline overline;
+  background-color: black;
+  color: white;
+}
+#normas{
+  font-size: 15px;
+}

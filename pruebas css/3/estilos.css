@@ -1,0 +1,17 @@
+.background{
+  background-image:url('comida-chica.jpg');
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center right;
+  text-shadow: 10px 10px 1px rgb(0, 0, 0);
+}
+
+.degradados{
+  background-image: linear-gradient(to bottom left, rgb(90, 179, 235) , rgb(182, 43, 43));
+  background: linear-gradient(180deg, rgba(16,16,143,1) 0%, rgba(227,31,123,1) 36%, rgba(19,195,21,1) 50%, rgba(186,169,14,1) 78%, rgba(0,212,255,1) 100%);
+}
+
+button{
+  background: none;
+  box-shadow: 0 0 1px 5px rgb(0, 0, 0) inset;
+}
