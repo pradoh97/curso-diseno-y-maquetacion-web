@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+body, button, input{
+  font-family: "Playfair Display";
+}
+label{
+  font-size: 22px;
+}
+
+h1{
+  color:rgb(255,219,88);
+  font-weight: 900;
+  text-align: center;
+}
+
+p{
+  text-align: center;
+  font-weight: 400;
+  font-size: 26px;
+}
+
+.modal{
+  background-color: rgb(180, 180, 180);
+}
+.cuerpo{
+  color: rgb(255, 255, 255);
+}
+
+label{
+  font-weight: 500;
+}
+
+.botones-accion, label{
+  color: rgb(255, 255, 255);
+}
+
+.suscribir{
+  background-color: rgb(59, 153, 207);
+}
+
+.cancelar{
+  background-color: transparent;
+}

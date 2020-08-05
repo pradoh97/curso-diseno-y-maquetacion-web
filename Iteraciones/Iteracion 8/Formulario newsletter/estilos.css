@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.modal{
+  font-size: calc(0.8rem + 0.4vmax);
+  background-image: url("res/img/comida.jpg");
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  box-shadow: 0 0 0.4em rgb(0, 0, 0);
+  width: 500px;
+}
+.modal label{
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.modal h1{
+  color:rgb(255,219,88);
+  font-weight: 900;
+  font-size: 2em;
+}
+
+.modal p{
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+.modal .cuerpo, .modal form{
+  color: rgb(255, 255, 255);
+}
+.modal label, .modal button{
+  color: inherit;
+}
+.modal label{
+  display: block;
+}
+.modal button, .modal input{
+  font-family: inherit;
+}
+.modal .suscribir{
+  background-color: rgb(59, 153, 207);
+  border: 2px solid transparent;
+}
+.modal .cancelar{
+  background-color: transparent;
+  border: 2px solid rgb(255, 255, 255);
+}

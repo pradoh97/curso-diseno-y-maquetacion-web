@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+:root{
+  font-size: calc(0.8em + 0.3vmax);
+}
+body{
+  font-family: "Merriweather", serif;
+}
+a{
+  color: inherit;
+}
+.encabezado{
+  line-height: 2em;
+}
+.encabezado .titular{
+  font-size: 2em;
+  font-weight: 900;
+}
+.encabezado .subtitulo{
+  font-weight: 700;
+  font-size: 1.5em;
+}
+.noticia{
+  text-align: justify;
+}
+.noticia p{
+  line-height: 2em;
+}
+.noticia figcaption{
+  font-size: 0.9em;
+}
+.noticia figure img{
+  width: 500px;
+}
+
+.categoria{
+  font-weight: 700;
+}
+.separador{
+  border-bottom: 2px solid rgb(76,181,99);
+}
+.enfasis{
+  color: rgb(76, 181, 99);
+}
+
+.noticia cite{
+  color: rgb(80,80,80);
+  font-size: 1.2em;
+  display: block;
+  text-align: center;
+  border-bottom: 2px solid rgb(80, 80, 80);
+  border-top: 2px solid rgb(80, 80, 80);
+}
+abbr{
+  font-weight: 700;
+}
+.tarjeta{
+  width: 400px;
+  height: 400px;
+  font-size: 0.8em;
+  display: block;
+  box-shadow: 0 0 0.2em rgb(0, 0, 0);
+}
+.tarjeta img{
+  width: 100%;
+  height: 300px;
+}
