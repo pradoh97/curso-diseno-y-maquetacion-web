@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Formulario newsletter</title>
+  </head>
+  <body>
+      <div>
+        <div>
+          <h2>Enterate de mis próximas recetas</h2>
+          <p>Suscribite a mi newsletter y recibí todas mis recetas saludables en tu casilla de correo.</p>
+        </div>
+        <form>
+          <div>
+            <label for="correo">Tu correo:</label>
+            <input type="email" id="correo" placeholder="sirjuan@diaz.com">
+          </div>
+          <div>
+            <label for="nombre">Tu nombre:</label>
+            <input type="text" id="nombre" placeholder="Sir Juan Diaz">
+          </div>
+          <div class="botones-accion">
+            <!-- El botón de suscribir tiene que ser de tipo submit, pero a efectos prácticos se lo dejó de tipo button para hacer click y que no redireccione.-->
+            <button class="suscribir" type="button" name="button">¡Suscribime!</button>
+            <button class="cancelar" type="button" name="button">No, paso</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
