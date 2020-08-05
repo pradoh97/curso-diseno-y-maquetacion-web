@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Formulario mobile first</title>
+  </head>
+  <body>
+    <form class="formulario">
+      <h1>Registro en Vendetodo</h1>
+      <div>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Sir Juan" required>
+      </div>
+      <div>
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido" placeholder="Diaz">
+      </div>
+      <div>
+        <label for="email">Correo</label>
+        <input type="email" id="email" name="correo" placeholder="sir@juan.diaz" required>
+      </div>
+      <div>
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" name="password" placeholder="Algo difícil" required>
+      </div>
+      <div>
+        <label for="nacimiento">Fecha de nacimiento</label>
+        <input type="date" id="nacimiento" name="nacimiento" required>
+      </div>
+      <div class="registro">
+        <button class="cta"type="submit" name="button">Registrarse</button>
+      </div>
+    </form>
+  </body>
+</html>

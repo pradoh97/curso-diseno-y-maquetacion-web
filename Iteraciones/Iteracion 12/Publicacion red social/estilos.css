@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+.publicacion{
+  background-color: rgb(0, 0, 0);
+  max-width: 600px;
+  border: 1px solid rgb(120,120,120);
+  cursor: pointer;
+  transition-property: background-color;
+  transition-duration: var(--transicion-corta);
+  font-family: "Source Sans Pro", sans-serif;
+  --transicion-corta: 0.3s;
+  padding: 0.5em;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.publicacion:hover{
+  background-color: rgb(50, 50, 50);
+}
+.publicacion a{
+  text-decoration: none;
+  color: inherit;
+}
+.publicacion a:hover{
+  text-decoration: underline;
+}
+.publicacion p{
+  margin: 0;
+}
+.publicacion img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition-property: filter;
+  transition-duration: var(--transicion-corta);
+}
+.publicacion img:hover{
+  filter: brightness(80%);
+}
+.publicacion .contenido{
+  color: rgb(255, 255, 255);
+  padding-left: 1em;
+  flex-grow: 1;
+}
+/* Opción con flex. Es un poco mas obvio lo que hace a primera vista. En el caso particular de twitter sería lo mejor porque a veces los tweets tienen flechas para desplegar opciones, dificiles de conseguir sin flexbox.
+.publicacion .metadatos-tweet{
+  display: flex;
+  flex-flow: row nowrap;
+}
+*/
+
+/* Opción con inline-block, menos código, menos obvio que hace a primera vista. */
+.publicacion .metadatos-tweet > *, .publicacion .perfil > * {
+  margin: 0 0.1em;
+  display: inline-block;
+}
+.publicacion .metadatos-tweet .nombre, .publicacion .metadatos-tweet .perfil{
+  font-weight: 600;
+  margin-left: 0;
+}
+.publicacion .perfil:hover > *{
+  text-decoration: underline;
+}
+.publicacion .perfil:hover .usuario, .publicacion .usuario a{
+  text-decoration: none;
+}
+.publicacion button, .publicacion .hora, .publicacion .usuario{
+  color: rgb(180, 180,180);
+  font-weight: 400;
+}
+.publicacion .mensaje{
+  color: rgb(220, 220, 220);
+  margin: 0.2em 0 1em;
+}
+.publicacion > div{
+  display: inline-block;
+}
+.publicacion .botones-interaccion{
+  transform: translateX(-8px);
+  display: flex;
+}
+.publicacion button{
+  background: none;
+  border: none;
+  margin-bottom: 4px;
+  padding: 0;
+  cursor: pointer;
+  transition-property: color;
+  transition-duration: var(--transicion-corta);
+  flex-grow: 1;
+  text-align: left;
+}
+.publicacion button i{
+  border-radius: 50%;
+  padding: 8px;
+  transition-property: background-color;
+  transition-duration: 0.3s;
+  margin-right: 3px;
+}
+
+.publicacion .comentar:hover, .publicacion .compartir:hover{
+  color: rgb(29, 161, 242);
+}
+.publicacion .comentar:hover > i, .publicacion .compartir:hover > i{
+  background-color: rgba(29, 161, 242, 0.1);
+}
+.publicacion .retwittear:hover{
+  color: rgb(23, 191, 99);
+}
+.publicacion .retwittear:hover > i{
+  background-color: rgba(23, 191, 99, 0.1);
+}
+.publicacion .gustar:hover{
+  color: rgba(224, 36, 94, 1);
+}
+.publicacion .gustar:hover > i{
+  background-color: rgba(224, 36, 94, 0.1);
+}
