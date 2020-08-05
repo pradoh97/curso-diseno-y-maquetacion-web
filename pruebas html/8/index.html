@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Formularios y controles</title>
+  </head>
+  <body>
+    <form>
+      <label for="nombre">Nombre completo</label>
+      <input id="nombre" type="file" value="" placeholder="Juan Diaz" autocomplete="off" required name="nombre">
+      <label for="salario">Salario preferido</label>
+      <input type="number" id="salariu" step="0.01" min="2" >
+      <input type="email">
+      <input type="date">
+      <select>
+        <option>Buenos Aires</option>
+        <option>Capital Federal</option>
+      </select>
+      <textarea></textarea>
+      <input type="submit" value="enviar">
+      <input type="reset" name="" value="limpiar">
+
+      <button type="submit" name="button">Enviar</button>
+      <button type="reset" name="button">Limpiar</button>
+    </form>
+  </body>
+</html>
